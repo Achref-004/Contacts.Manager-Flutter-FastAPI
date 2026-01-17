@@ -1,0 +1,36 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_contacts
+    environment:
+      POSTGRES_DB: contacts_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d contacts_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: .
+    container_name: fastapi_contacts
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./main.py:/app/main.py
+    environment:
+      - DATABASE_URL=postgresql://user:password@postgres:5432/contacts_db
+      - SECRET_KEY=your-secret-key-change-this-in-production
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

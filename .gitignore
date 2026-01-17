@@ -1,0 +1,143 @@
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+*.lock
+.metadata
+.flutter-plugins-dependencies
+
+# Fichiers générés
+*.g.dart
+*.freezed.dart
+
+# IDE - IntelliJ / Android Studio
+.idea/
+*.iws
+*.ipr
+*.iml
+.gradle/
+local.properties
+captures/
+.navigation/
+output.json
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# IDE - Autres
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python / FastAPI Backend
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Base de données
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Uploads (photos des contacts - données utilisateurs)
+uploads/
+uploads/**
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# Variables d'environnement et secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
+config.local.yml
+
+# Volumes Docker (données persistantes)
+postgres_data/
+
+# Fichiers système
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage
+coverage/
+*.lcov
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+*~
+
+# Documentation générée
+doc/api/
+.dartdoc/
+
+# Android specific
+android/app/debug
+android/app/profile
+android/app/release
+android/.gradle
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+android/key.properties
+*.jks
+
+# iOS specific
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/ServiceDefinitions.json
+ios/Runner/GeneratedPluginRegistrant.*
+ios/Pods/
+.symlinks/
+
+# Web
+web/flutter_service_worker.js
+web/version.json
+
+# macOS
+macos/Flutter/GeneratedPluginRegistrant.swift
