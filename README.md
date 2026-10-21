@@ -1,3 +1,11 @@
+<p align="center">
+  <img
+    src="Screenshot 2026-10-21 162245.png"
+    alt="logo"
+  >
+</p>
+
+
 <div align="center">
 
 # Contacts Manager
